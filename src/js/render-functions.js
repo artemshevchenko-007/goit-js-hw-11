@@ -22,3 +22,17 @@ export function createGallery(images) {
     gallery.insertAdjacentHTML('beforeend', markup);
     lightbox.refresh();
 }
+
+export function clearGallery() {
+    gallery.innerHTML = '';
+
+}
+const loader = document.querySelector('.loader');
+
+export function showLoader() {
+    loader.classList.remove('hidden');
+}
+
+export function hideLoader() {
+    loader.classList.add('hidden');
+}
